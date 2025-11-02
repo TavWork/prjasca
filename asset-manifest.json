@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/prjasca/static/css/main.84cc6de1.css",
+    "main.js": "/prjasca/static/js/main.fc2dfe47.js",
+    "static/media/cnpill4.jpg": "/prjasca/static/media/cnpill4.a7de8b82f8a0da22c654.jpg",
+    "index.html": "/prjasca/index.html",
+    "main.84cc6de1.css.map": "/prjasca/static/css/main.84cc6de1.css.map",
+    "main.fc2dfe47.js.map": "/prjasca/static/js/main.fc2dfe47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84cc6de1.css",
+    "static/js/main.fc2dfe47.js"
+  ]
+}

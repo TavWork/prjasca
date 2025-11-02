@@ -1,18 +1,13 @@
 import React from "react";
+import "../App.css";
+
 
 function Contact() {
   return (
-    <div className="page-container">
+    <div style={{ padding: "2rem", textAlign: "center" }}>
       <h2>Contact Us</h2>
-      <p>
-        We'd love to hear from you! Whether you have a question about our
-        products or need assistance, feel free to reach out.
-      </p>
-      <ul>
-        <li>Email: support@carcomfort.com</li>
-        <li>Phone: +1 (800) 555-9988</li>
-        <li>Address: 123 Comfort Lane, Drive City, USA</li>
-      </ul>
+      <p>Email: support@caraccessories.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
     </div>
   );
 }

@@ -1,29 +1,38 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./App.css";
+import "../App.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const closeMenu = () => setMenuOpen(false);
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
-      <div className="logo">Car Comfort</div>
+      <div className="navbar-container">
+        {/* Left: Links */}
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+          <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+        </ul>
 
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+        {/* Right: Logo */}
+        <div className="logo">Car Comfort</div>
+
+        {/* Hamburger button */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </div>
-
-      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-        <li><Link to="/gallery" onClick={closeMenu}>Gallery</Link></li>
-        <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
-      </ul>
     </nav>
   );
 }

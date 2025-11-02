@@ -1,16 +1,18 @@
 import "../App.css";
 
+import React from "react";
+
 function About() {
   return (
-    <div className="about">
-      <h1>About Us</h1>
+    <div style={{ padding: "2rem", textAlign: "center" }}>
+      <h2>About Us</h2>
       <p>
-        We specialize in high-quality car accessories designed to make your drive
-        more comfortable and stylish. Our flagship product, the Car Neck Rest
-        Pillow, is ergonomically designed for maximum comfort.
+        We specialize in premium car accessories designed to enhance your driving experience.
+        Our mission is to bring comfort and luxury to every journey.
       </p>
     </div>
   );
 }
 
 export default About;
+

@@ -15,6 +15,7 @@ function App() {
 
         <main className="page-content">
           <Routes>
+            <Route path="/prjasca" element={<ProductPage />} />
             <Route path="/" element={<ProductPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

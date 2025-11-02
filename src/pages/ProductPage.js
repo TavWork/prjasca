@@ -17,7 +17,7 @@ function ProductPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000);
+    }, 8000);
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -31,13 +31,26 @@ function ProductPage() {
 
   return (
     <div className="product-page">
-      <header className="header">
-        <h1>Car Neck Pillow</h1>
-        <p>Luxury Comfort for Every Ride</p>
-      </header>
+      {/* <section className="hero-intro">
+        <div className="hero-content">
+          <h1>Car Neck Pillow</h1>
+          <p>Luxury Comfort for Every Ride</p>
+          <button
+            className="hero-btn"
+            onClick={() =>
+              document
+                .getElementById("product-section")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Shop Now
+          </button>
+
+        </div>
+      </section> */}
 
       {/* ===== Product Details (Slider + Info) ===== */}
-      <section className="product-section">
+      <section id="product-section" className="product-section">
         <div className="product-main">
           <div className="slider-container">
             <button className="arrow left" onClick={prevSlide}>
